@@ -148,6 +148,31 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-users-cog"></i>
+              <p>
+                User Settings
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('all.users')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Users</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('admin.change.password')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Change Password</p>
+                </a>
+              </li>
+            </ul>
+          </li>
            <li class="nav-item">
             <a href="{{route('admin.logout')}}" class="nav-link">
                <i class="fas fa-sign-out-alt"></i>

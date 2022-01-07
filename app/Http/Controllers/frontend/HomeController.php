@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\liveGame;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\User;
+use Hash;
 
 class HomeController extends Controller
 {
@@ -39,5 +41,62 @@ $post = DB::table('upcoming_games')
 
        return view('frontend.singlegame.upcomingsingle_game', compact('post'));
  }
+ 
+ public function AllWriter()
+    {
+  $user = DB::table('users')->get();
+  return view('backend.user.user',compact('user'));
+    }
+
+    public function StoreUser(Request $request)
+  { 
+  
+$data=array();
+$data = array();
+$data['name'] = $request->name;
+$data['email'] = $request->email;
+$data['password'] = Hash::make($request->password);
+
+if($request->file('profile_photo_path'))
+        {
+         $file = $request->file('profile_photo_path');
+         $filename =date('YmdHi').$file->getClientOriginalName();
+         $file->move(public_path('upload/admin_images'),$filename);
+         $data['profile_photo_path']=$filename;
+       
+    }
+
+DB::table('users')->insert($data);
+ return Redirect()->route('all.users');
+
+    }
+     public function UpdateWriter(Request $request, $id){
+        
+      $data = array();
+     	$data['name'] = $request->name;
+     	$data['email'] = $request->email;
+      $data['password'] = Hash::make($request->password);
+      if($request->file('profile_photo_path'))
+        {
+         $file = $request->file('profile_photo_path');
+         $filename =date('YmdHi').$file->getClientOriginalName();
+         $file->move(public_path('upload/admin_images'),$filename);
+         $data['profile_photo_path']=$filename;
+       
+    }
+      
+
+     	DB::table('users')->where('id',$id)->update($data);
+
+      return Redirect()->route('all.users');
+
+   }
+   public function deletewriter($id)
+    {
+        $ad = User::find($id);
+        $ad->delete();
+        return  redirect()->back()->with('message','Ad deleted successfully');
+
+    }
 
 }

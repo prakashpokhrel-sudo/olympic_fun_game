@@ -128,4 +128,14 @@ Route::get('livegames/{categorySlug}', [HomeController::class, 'findbasedcategor
 
 
 
-//admin profile
+//user profile
+Route::get('/admin/add/user',[HomeController::class, 'AddUser'])->name('add.user');
+
+Route::post('/admin/store/user',[HomeController::class, 'StoreUser'])->name('store.user');
+
+Route::get('/admin/user/index',[HomeController::class, 'AllWriter'])->name('all.users');
+
+Route::post('/admin/update/writer/{id}', [HomeController::class, 'UpdateWriter'])->name('update.user');
+
+Route::get('/admin/delete/writer/{id}', [HomeController::class, 'deletewriter'])->name('delete.user');
+

@@ -6,7 +6,7 @@
     <meta name=description content="">
     <meta name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>soccer club</title>
+    <title>Olympic Fun Game</title>
     <link rel="shortcut icon" href=favicon.ico>
     <link rel=stylesheet href="/folder1/vendor.css">
     <link rel=stylesheet href="/folder1/style.css">
@@ -31,7 +31,7 @@
         </div>
         <div class="header-lower clearfix">
             <div class=container>
-                <div class=row><h1 class=logo><a href=index-2.html><img src="/folder1/images/logo.png" alt=image></a></h1>
+                <div class=row><h1 class=logo><a href=index-2.html><img src="/folder1/images/logo4.jpg" alt=image style="height:150px;"></a></h1>
 
                     <div class=menubar>
                         <nav class=navbar>
@@ -63,21 +63,21 @@
                  data-ls="offsetxin: left; offsetxout:left; scalein:90; easingin: easeoutquart; durationin: 3000; delayin: 250;">
 
             <h2 class="ls-l bannertext layercontent03" data-ls="offsetxin:left; rotatexin:90 ; durationin: 3500;">
-                action</h2>
+                Yokyo </h2>
 
             <h2 class="ls-l bannertext01 italic01 layercontent04"
-                data-ls="offsetxin:left; scalexin:9; durationin: 4000;">starts</h2><h4
+                data-ls="offsetxin:left; scalexin:9; durationin: 4000;">Olympic</h2><h4
                     class="ls-l bannertext02 layercontent05" data-ls="offsetxin:left; rotatexin:90 ; durationin: 4500;">
                 from</h4>
 
             <h2 class="ls-l bannertext01 layercontent06" style="left: 87%; top:760px;"
                 data-ls="offsetxin:left; flipxin:90 ; durationin: 5000;">21<sup>st</sup></h2><h6
                     class="ls-l bannertext03 layercontent07" data-ls="offsetxin:left; flipxin:90 ; durationin: 6000;">
-                july , 2015</h6></div>
+                july , 2021</h6></div>
     </div>
     <div class=banner-text>
         <div class=container>
-            <div class=row>action start from 21<sup>st</sup> july , 2015.</div>
+            <div class=row>Yokyo Olympic Games from 21<sup>st</sup> july , 2021.</div>
         </div>
     </div>
 </div>
